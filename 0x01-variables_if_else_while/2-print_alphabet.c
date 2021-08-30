@@ -1,14 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
-* main - main block
-* Description: Prints the alphabet in lowercase.
-* Return: zero
-*/
-
-char main(void)
+ * main - main block
+ * Description: Use `putchar` function to print the alphabet in lowercase.
+ * Return: 0
+ */
+int main(void)
 {
 	char c = 'a';
 
@@ -17,7 +13,6 @@ char main(void)
 		putchar(c);
 		c++;
 	}
-
 	putchar('\n');
 
 	return (0);
