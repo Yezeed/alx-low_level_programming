@@ -6,7 +6,7 @@
 * Print only the smallest combinations
 * Number must be printed in ascending order using 'putchar'
 * 'putchar' function is allowed only for six times maximum
-* Return : zero
+* Return: Zero
 */
 
 int main(void)
