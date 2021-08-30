@@ -9,19 +9,16 @@
 
 int main(void)
 {
-	int i = '0';
-	char c = 'a';
+	char c;
+	int i;
 
-	while (i < 10)
+	for (i = 0; i < 10; i++)
 	{
-		putchar (i + '0');
-		i++;
+		putchar(i + '0');
 	}
-
-	while (c < 'g')
+	for (c = 'a'; c < 'g'; c++)
 	{
 		putchar(c);
-		c++;
 	}
 	putchar('\n');
 
