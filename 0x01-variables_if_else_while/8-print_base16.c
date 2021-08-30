@@ -3,20 +3,25 @@
 /**
 * main - main block
 * Description: Print all digit of base 16 in lowercase.
+* Using 'putchar' only 3 times.
 * Return: 0
 */
 
 int main(void)
 {
-	int i;
-	int a;
+	int i = '0';
+	char c = 'a';
 
-	for (i = 1; i < 16; i++)
+	while (i < 10)
 	{
-		while (a == i)
-		{
-			putchar(i + '1');
-		}
+		putchar (i + '0');
+		i++;
+	}
+
+	while (c < 'g')
+	{
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 
