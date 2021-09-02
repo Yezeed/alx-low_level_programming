@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+* main - reference to main
 * print_alphabet -  Print the alphabet in lowercase
 * Return: (0)
 */
@@ -16,4 +17,6 @@ int main(void)
 		c++;
 	}
 	_putchar('\n');
+
+	return (0);
 }
