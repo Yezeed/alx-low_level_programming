@@ -1,16 +1,17 @@
 #include "main.h"
 
+#include <stdio.h>
+
 /**
- * _strspn - function that gets the length of a prefix substring.
+ * _strpbrk - function that searches a string for any of a set of bytes.
  *
- * @s: initial segment
- * @accept: bytes to check
- * Return: unsigned int
+ * @s: string to receive
+ * @accept: bytes to accept
+ * Return: char
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	unsigned int cont = 0;
 	int j = 0;
 	int flag;
 
@@ -21,13 +22,12 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *(accept + j))
 				flag = 1;
-			j += 1;
+			j++;
 		}
 		j = 0;
-		if (flag == 0)
-			break;
-		cont += 1;
+		if (flag == 1)
+			return (s);
 		s++;
 	}
-	return (cont);
+	return (NULL);
 }
