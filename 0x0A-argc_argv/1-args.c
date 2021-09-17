@@ -4,7 +4,8 @@
 
 /**
  * main - Program prints the number of argument.
- *
+ * @argv: argument vector
+ * @argc: argument conut
  * Return: success.
  */
 
