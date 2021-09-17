@@ -5,11 +5,13 @@
 /**
  * main - program prints its name.
  * Even when the program is renamed without compiling.
+ * @argv: argument vector
+ * @argc: argument count
  * Return: success
  */
 
 int main(int argc, char *argv[])
 {
-	printf("Program's name is: %s\n", argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
